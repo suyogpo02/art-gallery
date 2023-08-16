@@ -1,0 +1,11 @@
+CREATE ROLE container SUPERUSER PASSWORD 'postgres';
+CREATE SCHEMA cnt AUTHORIZATION postgres;
+
+CREATE TABLE IF NOT EXISTS USER (
+ id UUID NOT NULL,
+ first_name TEXT NOT NULL,
+ last_name TEXT NOT NULL,
+ email_id TEXT NOT NULL,
+ created_date TEXT NOT NULL,
+ PRIMARY KEY (id)
+);
