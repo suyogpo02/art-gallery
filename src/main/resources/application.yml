@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/artgallery?TC_INITSCRIPT=db/migration/V1__init.sql
+    username: artist
+    password: artist123

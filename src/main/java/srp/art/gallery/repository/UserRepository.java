@@ -15,7 +15,7 @@ public class UserRepository {
     NamedParameterJdbcTemplate jdbcTemplate;
 
     public void insert(User user){
-        String inertSql = "INSERT INTO USER (id, first_name, last_name, email_id, created_date )" +
+        String inertSql = "INSERT INTO USERS (id, first_name, last_name, email_id, created_date )" +
                 " VALUES ( :id, :first_name, :last_name, :email_id, :created_date )";
         Map<String, Object> paramMap = new LinkedHashMap<>();
         paramMap.put("id", user.getId());
